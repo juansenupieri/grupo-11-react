@@ -1,7 +1,13 @@
 import React from 'react' ;
-
+import { useEffect, useState } from "react";
 
 function CategoriesDB(props){
+    const [categories, setCategories] = useState();
+    useEffect(()=>{
+        fetch('http://localhost:3000/api/products')
+        .then(response => response.json())
+        .then(data => setCategories(data.coountBycategory))
+    })
     return( 
         <div className="col-lg-6 mb-4">						
         <div className="card shadow mb-4">
