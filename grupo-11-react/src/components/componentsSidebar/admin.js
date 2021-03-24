@@ -1,4 +1,7 @@
-import React from 'react' ;
+export default function admin() {
+    return <p>admin</p>
+}
+/*import React from 'react' ;
 
 
 function admin(props){
@@ -10,3 +13,4 @@ function admin(props){
 }
 
 export default admin;
+*/
