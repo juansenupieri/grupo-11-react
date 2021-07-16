@@ -9,7 +9,7 @@ function AmountProducts(props){
 		fetch('http://localhost:3000/api/products')
 		.then(response => response.json())
 		.then(data => setTotalPrice(data.totalPrice.totalPrice))
-	})
+	}) 
     return( 
         <div className="col-md-4 mb-4">
 							<div className="card border-left-success shadow h-100 py-2">
